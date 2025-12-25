@@ -41,6 +41,7 @@ body {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 .plant {
@@ -73,7 +74,7 @@ body {
     margin-right: auto;
     font-size: var(--fs-p);
     padding-top: 2rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
     width: 100%;
 }
 
@@ -99,7 +100,51 @@ body {
     margin-top: auto;
     margin-bottom: auto;
     border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
+    padding: 0.5rem;
     border: none;
+    cursor: pointer;
+}
+
+.author button:active {
+    background-color: var(--grayish-blue);
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.share {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--very-dark-grayish-blue);
+    color: var(--grayish-blue);
+    gap: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 0 0 10px 10px;
+}
+
+.close-share {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 50%;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    background-color: var(--desaturated-dark-blue);
+}
+
+.close-share img {
+    filter: brightness(0) invert(1);
+}
+
+span {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-size: var(--fs-p);
 }
