@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Article preview component</title>
-
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -15,22 +15,30 @@
   </style>
 </head>
 <body>
-
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
-
-  Ever been in a room and felt like something was missing? Perhaps 
+  <div class="container">
+    <img class="plant" src="/images/drawers.jpg" alt="A potted plant on a nightstand.">
+    <div class="intro">
+      <h2>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h2>
+    </div>
+    <div class="para">
+      <p>Ever been in a room and felt like something was missing? Perhaps 
   it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
-
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
-  
+  to help you make any room feel complete.</p>
+    </div>
+    <div class="author">
+      <img class="person" src="/images/avatar-michelle.jpg" alt="Michelle Appleton">
+      <div>
+        <p class="name">Michelle Appleton</p>
+        <p class="date">28 Jun 2020</p>
+      </div>
+      <button><img src="/images/icon-share.svg" alt="share"></button>
+    </div>
+    <div class="share hidden">
+    </div>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/finn0010-jpg">Caleb Stanfield</a>.
   </div>
 </body>
 </html>

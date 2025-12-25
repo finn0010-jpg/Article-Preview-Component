@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,900;1,900&family=Young+Serif&display=swap');
+
+:root {
+    /* Colors */
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --desaturated-dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+
+    /* Fonts */
+    --font-manrope: 'Manrope', sans-serif;
+    --fs-p: 13px;
+    --fw-500: 500;
+    --fw-700: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-manrope);
+    background-color: var(--light-grayish-blue);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plant {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.intro {
+    padding-left: 2rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    font-size: 0.8rem;
+    font-weight: var(--fw-700);
+    line-height: 2rem;
+}
+
+.para {
+    font-size: var(--fs-p);
+    padding-left: 2rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    color: var(--grayish-blue);
+    font-weight: var(--fw-500);
+    line-height: 1.25rem;
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    font-size: var(--fs-p);
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    width: 100%;
+}
+
+.person {
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+
+.name {
+    font-weight: var(--fw-700);
+}
+
+.date {
+    color: var(--grayish-blue);
+}
+
+.author button {
+    margin-left: auto;
+    margin-right: 2rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+}
